@@ -4,39 +4,49 @@
     <meta charset="utf-8">
     <title>Sparta DOM Dice Game</title>
     <link rel="stylesheet" href="css/index.css">
-    <script type="text/javascript" src="js/index.js"></script>
   </head>
   <body>
     <h1>Sparta DOM Dice Game</h1>
+
+    <!-- Added ids to each of the inner squares so I can add the dot class to them when the randomly generated number matches-->
     <div class="dice">
       <div class="square">
-        <div class="innerSquare"></div>
+        <div class="innerSquare" id="top-left"></div> 
       </div>
       <div class="square">
-        <div class="innerSquare"></div>
+        <div class="innerSquare" id="top-mid"></div>
       </div>
       <div class="square">
-        <div class="innerSquare"></div>
+        <div class="innerSquare" id="top-right"></div>
       </div>
       <div class="square">
-        <div class="innerSquare"></div>
+        <div class="innerSquare" id="mid-left"></div>
       </div>
       <div class="square">
-        <div class="innerSquare"></div>
+        <div class="innerSquare" id="mid"></div>
       </div>
       <div class="square">
-        <div class="innerSquare"></div>
+        <div class="innerSquare" id="mid-right"></div>
       </div>
       <div class="square">
-        <div class="innerSquare"></div>
+        <div class="innerSquare" id="bot-left"></div>
       </div>
       <div class="square">
-        <div class="innerSquare"></div>
+        <div class="innerSquare" id="bot-mid"></div>
       </div>
       <div class="square">
-        <div class="innerSquare"></div>
+        <div class="innerSquare" id="bot-right"></div>
       </div>
     </div>
     <h2>Feelin' lucky?</h2>
+
+    <!-- div for the button which is centered and has some styling -->
+    <div class="buttonDiv">
+      <button type="button" onclick="randomNum()" class="button1">Click Me</button>
+    </div>
+
+    <script type="text/javascript" src="js/index.js"></script>
   </body>
+
+
 </html>
